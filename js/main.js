@@ -20,8 +20,8 @@ $(document).ready(function() {
         filen ligger ikke ute med CORS-støtte, så vi må lagre den lokalt eller 
         ha en proxy - som fks corsproxy.com
     */
-    //var url = 'js/barnehager.json'; //lokal lagring
-    var url = "http://www.corsproxy.com/www.barnehager.oslo.kommune.no/bhgmaps/50546.json";
+    var url = 'js/barnehager.json'; //lokal lagring
+    //var url = "http://www.corsproxy.com/www.barnehager.oslo.kommune.no/bhgmaps/50546.json";
     $.getJSON(url, function(data) {
         //vi har fått data tilbake fra AJAX-requesten
         //oppretter et layergroup som kan holde alle marker-layerne
